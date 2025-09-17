@@ -120,28 +120,32 @@
   }
 
   /* MAIN CONTENT (sem quadrados centrais) */
-  .content{
-    grid-column: 2 / 3;
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
-    border-radius:12px;
-    padding:22px;
-    overflow:auto;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
-  }
+  .content {
+  grid-column: 2 / 3;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
+  border-radius: 12px;
+  padding: 22px;
+  overflow: auto;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
 
-  .welcome {
-    background: linear-gradient(180deg, rgba(59,15,178,0.08), rgba(59,15,178,0.03));
-    border: 1px solid rgba(59,15,178,0.12);
-    padding:20px;
-    border-radius:12px;
-    color:#1d0fb8;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:16px;
-  }
-  .welcome h2{ font-size:20px; margin-bottom:4px; color:#4800f1; }
-  .welcome p{ color:var(--muted); font-size:13px; margin:0; }
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* permite quebrar linha em telas menores */
+  gap: 20px;       /* espaço entre os cards */
+  margin-bottom: 20px;
+}
+
+.welcome {
+  flex: 1 1 180px; /* largura mínima de cada card */
+  background: linear-gradient(180deg, rgba(59,15,178,0.08), rgba(59,15,178,0.03));
+  border: 1px solid rgba(59,15,178,0.12);
+  padding: 30px;
+  border-radius: 12px;
+  color: #1d0fb8;
+}
+
+
 
   /* Exemplo de seção vazia (sem quadrados) */
   .empty-area{
