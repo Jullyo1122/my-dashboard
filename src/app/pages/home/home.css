@@ -144,22 +144,19 @@
   border-radius: 12px;
   color: #1d0fb8;
 }
-
-
-
   /* Exemplo de seção vazia (sem quadrados) */
   .empty-area{
-    margin-top:18px;
-    min-height:420px;
+    min-height:310px;
     border-radius:10px;
-    display:flex;
     align-items:center;
     justify-content:center;
     color:rgba(255, 255, 255, 0.65);
     font-size:15px;
     background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02));
     border: 1px dashed rgba(255,255,255,0.03);
-    padding:40px;
+    padding: 0px;
+    margin: 300px;
+    margin-top: 70px;
   }
 
   /* Responsividade simples */
@@ -169,5 +166,4 @@
     .topbar{ grid-column: 1 / -1; }
     .content{ grid-column: 1 / -1; }
     .search{ min-width:120px; max-width:200px; }
-    .empty-area{ min-height:260px; padding:18px; }
   }

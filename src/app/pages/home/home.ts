@@ -2,10 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NgxEchartsDirective, provideEchartsCore } from 'ngx-echarts';
 import * as echarts from 'echarts/core';
-import { BarChart } from 'echarts/charts';
-import { GridComponent } from 'echarts/components';
+import { BarChart, LineChart } from 'echarts/charts';
+import { GridComponent, LegendComponent, TooltipComponent } from 'echarts/components';
 import { CanvasRenderer } from 'echarts/renderers';
-echarts.use([BarChart, GridComponent, CanvasRenderer]);
+echarts.use([BarChart, LineChart, GridComponent, TooltipComponent, LegendComponent, CanvasRenderer]);
 
 import { EChartsOption } from 'echarts/types/dist/shared';
 
@@ -20,7 +20,7 @@ export class Home {
   chartOption: EChartsOption = {
     xAxis: {
       type: 'category',
-      data: ['Janeiro/2025', 'Fevereiro/2025', 'Março/2025'],
+      data: ['Jan', 'Fev', 'Mar', 'Abril', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
       axisLabel: {
         rotate: 45,
         interval: 0
@@ -32,13 +32,9 @@ export class Home {
     series: [
       {
         name: 'Vendas (mil)',
-        type: 'bar',
-        data: [30, 20, 78],
-        label: {
-          show: true,
-          position: 'top',
-          formatter: '{c} mil '
-        }
+        type: 'line',
+        data: [30, 20, 78, 50, 90, 120, 80, 60, 70, 100, 130, 150],
+        
       }
     ]
   }
