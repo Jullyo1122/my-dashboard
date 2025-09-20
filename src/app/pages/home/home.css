@@ -121,12 +121,10 @@
 
   /* MAIN CONTENT (sem quadrados centrais) */
   .content {
-  grid-column: 2 / 3;
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));
-  border-radius: 12px;
-  padding: 22px;
-  overflow: auto;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  display: grid;
+  grid-template-rows: auto 1fr; /* primeira linha = cards, segunda = empty-area */
+  grid-template-columns: 1fr;   /* tudo em uma coluna */
+  gap: 20px;
 }
 
 .cards {
@@ -146,8 +144,12 @@
 }
   /* Exemplo de seção vazia (sem quadrados) */
   .empty-area{
-    min-height:310px;
+    justify-self: start;
+    min-width: 500px; 
+    margin-top: -5px;
+    height:350px;
     border-radius:10px;
+    display: flex;
     align-items:center;
     justify-content:center;
     color:rgba(255, 255, 255, 0.65);
@@ -155,8 +157,6 @@
     background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02));
     border: 1px dashed rgba(255,255,255,0.03);
     padding: 0px;
-    margin: 300px;
-    margin-top: 70px;
   }
 
   /* Responsividade simples */
@@ -167,3 +167,4 @@
     .content{ grid-column: 1 / -1; }
     .search{ min-width:120px; max-width:200px; }
   }
+  
