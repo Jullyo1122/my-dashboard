@@ -147,7 +147,7 @@
 }
   /* Exemplo de seção vazia (sem quadrados) */
   .empty-area{
-    min-width: 500px; 
+    width: 100%;
     margin-top: -15px;
     height:350px;
     border-radius:10px;

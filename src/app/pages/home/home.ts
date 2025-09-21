@@ -18,22 +18,36 @@ import { EChartsOption } from 'echarts/types/dist/shared';
 })
 export class Home {
   chartOption: EChartsOption = {
+    grid: {
+    top: 35,
+    left: 40,
+    right: 35,
+    bottom: 35,
+    containLabel: true
+  },
+  
     xAxis: {
       type: 'category',
       data: ['Jan', 'Fev', 'Mar', 'Abril', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
       axisLabel: {
+        color: '#fff',
         rotate: 45,
         interval: 0
       }
     },
+
     yAxis: {
-      type: 'value'
+      type: 'value',
+      axisLabel:{
+         color: '#fff',
+      }
     },
     series: [
       {
         name: 'Vendas (mil)',
         type: 'line',
         data: [30, 20, 78, 50, 90, 120, 80, 60, 70, 100, 130, 150],
+        color: 'rgba(58, 15, 178, 0.918)',
         
       }
     ]
