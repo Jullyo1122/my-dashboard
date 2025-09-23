@@ -8,6 +8,7 @@ import { CanvasRenderer } from 'echarts/renderers';
 echarts.use([BarChart, LineChart, GridComponent, TooltipComponent, LegendComponent, CanvasRenderer]);
 
 import { EChartsOption } from 'echarts/types/dist/shared';
+import { EChartsCoreOption } from 'echarts/core';
 
 @Component({
   selector: 'app-home',
@@ -25,31 +26,42 @@ export class Home {
     bottom: 35,
     containLabel: true
   },
-  
-    xAxis: {
-      type: 'category',
-      data: ['Jan', 'Fev', 'Mar', 'Abril', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
-      axisLabel: {
-        color: '#fff',
-        rotate: 45,
-        interval: 0
-      }
-    },
-
-    yAxis: {
-      type: 'value',
-      axisLabel:{
-         color: '#fff',
-      }
-    },
-    series: [
-      {
-        name: 'Vendas (mil)',
-        type: 'line',
-        data: [30, 20, 78, 50, 90, 120, 80, 60, 70, 100, 130, 150],
-        color: 'rgba(58, 15, 178, 0.918)',
-        
-      }
-    ]
-  }
+  xAxis: {
+    type: 'category',
+    data: ['Jan', 'Fev', 'Mar', 'Abril', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+    axisLabel: {
+      color: '#fff',
+      rotate: 45,
+      interval: 0
+    }
+  },
+  yAxis: {
+    type: 'value',
+    axisLabel:{
+      color: '#fff',
+    }
+  },
+  series: [
+    {
+      name: 'Vendas (mil)',
+      type: 'line',
+      data: [30, 20, 78, 50, 90, 120, 80, 60, 70, 100, 130, 150],
+      color: 'rgba(58, 15, 178, 0.918)',  
+    }
+  ]}
+  chartOption2: EChartsCoreOption  =  { 
+    xAxis : { 
+      type: 'category', 
+      data : [ 'Seg' ,  'Ter' ,  'Qua' ,  'Qui' ,  'Sex' ,  'Sáb' ,  'Dom' ] , 
+    } , 
+    yAxis : { 
+      type : 'value' , 
+    } , 
+    series : [ 
+      { 
+        data : [ 820 ,  932 ,  901 ,  934 ,  1290 ,  1330 ,  1320 ] , 
+        type : 'bar' , 
+      } , 
+    ] , 
+  } ;
 }
