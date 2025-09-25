@@ -46,21 +46,60 @@ export class Home {
       name: 'Vendas (mil)',
       type: 'line',
       data: [30, 20, 78, 50, 90, 120, 80, 60, 70, 100, 130, 150],
-      color: 'rgba(58, 15, 178, 0.918)',  
+      color: '#fff',  
     }
   ]}
   chartOption2: EChartsCoreOption  =  { 
     xAxis : { 
       type: 'category', 
-      data : [ 'Seg' ,  'Ter' ,  'Qua' ,  'Qui' ,  'Sex' ,  'Sáb' ,  'Dom' ] , 
+      data : [ 'Seg' ,  'Ter' ,  'Qua' ,  'Qui' ,  'Sex' ,  'Sáb' ,  'Dom' ] ,
+      axisLabel:{
+        color: '#fff',
+      }
+      
     } , 
     yAxis : { 
-      type : 'value' , 
+      type : 'value' ,
+      axisLabel:{
+        color: '#fff',
+      }
+      
     } , 
     series : [ 
       { 
         data : [ 820 ,  932 ,  901 ,  934 ,  1290 ,  1330 ,  1320 ] , 
         type : 'bar' , 
+        color: '#fff', 
+      } , 
+    ] , 
+  } ;
+  chartOption3: EChartsCoreOption  =  { 
+    xAxis : { 
+      type: 'value', 
+      axisLabel:{
+        color: '#fff',
+      }
+      
+    } , 
+    yAxis : { 
+      type : 'category' ,
+      data : [ 'Seg' ,  'Ter' ,  'Qua' ,  'Qui' ,  'Sex'] ,
+      axisLabel:{
+        color: '#fff',
+      }
+      
+    } , 
+    series : [ 
+      { 
+        name: 'Vendas (mi)',
+        data : [ 820 ,  932 ,  901 ,  934 ,  1290 ,  1330 ,  1320 ] , 
+        type : 'bar' , 
+        color: '#fff', 
+        label: {
+          show: true,
+          position: 'right', // mostra o valor na ponta da barra
+          color: '#fff'
+        }
       } , 
     ] , 
   } ;

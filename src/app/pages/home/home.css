@@ -1,9 +1,8 @@
 :root{
-    --bg-dark:#0b0f20;            /* fundo da página */
-    --topbar:#1c0b5a;            /* barra superior roxa escura */
-    --accent:#3b0fb2;            /* roxo vivo */
-    --sidebar:#2b0a66;           /* painel lateral */
-    --panel:#bfe8ee;             /* cor clara (seria para conteúdo) */
+    --bg-dark:#04052E;            /* fundo da página */
+    --topbar:#140152;            /* barra superior roxa escura */
+    --accent:#22007C;            /* roxo vivo */
+    --panel:#E5F4E3;             /* cor clara (seria para conteúdo) */
     --button-bg:#1e0a3f;
     --muted:#bdbdbd;
   }
@@ -140,12 +139,11 @@
 .welcome {
   flex: 1 1 180px; /* largura mínima de cada card */
   background: linear-gradient(180deg, rgba(58, 15, 178, 0.123), rgba(58, 15, 178, 0.068));
-  border: 1px solid rgba(58, 15, 178, 0.918);
+  border: 1px solid #E5F4E3;
   padding: 30px;
   border-radius: 12px;
   color: #bdbdbd;
 }
-  /* Exemplo de seção vazia (sem quadrados) */
   .empty-area{
     width: 100%;
     margin-top: -15px;
@@ -154,10 +152,9 @@
     display: flex;
     align-items:center;
     justify-content:center;
-    color:rgba(255, 255, 255, 0.65);
     font-size:15px;
     background: linear-gradient(180deg, rgba(58, 15, 178, 0.123), rgba(58, 15, 178, 0.068));
-    border: 1px solid rgba(58, 15, 178, 0.918);
+    border: 1px solid #E5F4E3;
   }
   .empty-area3{
     width: 50%;
@@ -165,7 +162,8 @@
     height:350px;
     border-radius:10px;
     background: linear-gradient(180deg, rgba(58, 15, 178, 0.123), rgba(58, 15, 178, 0.068));
-    border: 1px solid rgba(58, 15, 178, 0.918);
+    border: 1px solid #E5F4E3;
+    
   }
 
   /* Responsividade simples */
