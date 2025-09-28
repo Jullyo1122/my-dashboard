@@ -157,13 +157,28 @@
     border: 1px solid #E5F4E3;
   }
   .empty-area3{
-    width: 50%;
+    width: 49%;
     margin-top: 5px;
     height:350px;
     border-radius:10px;
     background: linear-gradient(180deg, rgba(58, 15, 178, 0.123), rgba(58, 15, 178, 0.068));
     border: 1px solid #E5F4E3;
     
+  }
+  .empty-area5{
+    width: 49%;
+    margin-top: -370px;
+    height:350px;
+    border-radius:10px;
+    background: linear-gradient(180deg, rgba(58, 15, 178, 0.123), rgba(58, 15, 178, 0.068));
+    border: 1px solid #E5F4E3;
+    margin-left: 580px;
+  }
+  #inp-num{
+    background: transparent;
+    border: none;
+    color: #E5F4E3;
+    width: 50px;
   }
 
   /* Responsividade simples */

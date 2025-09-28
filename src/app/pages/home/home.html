@@ -52,11 +52,11 @@
     <!-- CONTENT PRINCIPAL (SEM QUADRADOS CENTRAIS) -->
     <main class="content">
       <div class="cards">
-        <button class="welcome" id="meta">Meta</button>
-        <button class="welcome" id="total">Faturamento total</button>
-        <button class="welcome" id="vendas">Vendas</button>
-        <button class="welcome" id="nvclient">Novos Clientes</button>
-        <button class="welcome" id="tick">Ticket médio</button>
+        <button class="welcome" id="meta">Meta<input type="number" id="inp-num" [value]="metricValue" readonly></button>
+        <button class="welcome" id="total">Faturamento total<input type="number" id="inp-num" [value]="metricValue" readonly></button>
+        <button class="welcome" id="vendas">Vendas<input type="number" id="inp-num" [value]="metricValue" readonly></button>
+        <button class="welcome" id="nvclient">Novos Clientes<input type="number" id="inp-num" [value]="metricValue" readonly></button>
+        <button class="welcome" id="tick">Ticket médio<input type="number" id="inp-num" [value]="metricValue" readonly></button>
       </div>
       <div echarts [options]="chartOption" class="empty-area" aria-hidden="true" id="empty-area2" [autoResize]="true"></div>
       <div echarts [options]="chartOption2" class="empty-area3" id="empty-area4"></div>
