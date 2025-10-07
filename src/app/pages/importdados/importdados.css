@@ -28,6 +28,7 @@
   align-items: center;
   gap: 16px;
   margin-bottom: 32px;
+  
 }
 .logo {
   width: 56px;
@@ -55,6 +56,7 @@ fieldset {
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 28px;
+  margin-top: -12px;
 }
 legend {
   font-weight: 600;
@@ -71,11 +73,9 @@ legend {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
   gap: 12px;
-  
 }
 label {
   font-size: 0.85rem;
-  
 }
 
 /* Inputs */
@@ -87,6 +87,7 @@ input {
   font-size: 0.8rem;
   transition: all 0.15s ease;
   margin-top: -3px;
+  color: #FFFFFF;
 }
 input:focus {
   border-color: var(--accent);
@@ -102,7 +103,6 @@ input[type="file"] {
 
 /* Buttons */
 .btn {
-  display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 10px 18px;
@@ -112,15 +112,14 @@ input[type="file"] {
   transition: all 0.2s ease;
   font-weight: 600;
   font-size: 0.9rem;
+  margin-top: 15px;
 }
 .btn.primary {
-  background: var(--accent);
-  color: #fff;
+  color: #04052E;
 }
 .btn.secondary {
-  background: transparent;
-  border: 1px solid var(--accent);
-  color: var(--mint);
+ 
+  color: #04052E;
 }
 .btn:hover {
   transform: translateY(-1px);
