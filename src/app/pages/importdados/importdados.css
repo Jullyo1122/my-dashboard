@@ -20,15 +20,14 @@
   backdrop-filter: blur(14px);
   animation: fadeIn 0.4s ease;
   color: #FFFFFF;
+  margin-right: 210px;
 }
-
 /* Brand / Header */
 .brand {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 32px;
-  
+  margin-bottom: 32px; 
 }
 .logo {
   width: 56px;
@@ -125,8 +124,6 @@ input[type="file"] {
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(34,0,124,0.4);
 }
-
-
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(8px); }
